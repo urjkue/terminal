@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beta Terminal</title>
+
+<style>
+:root{
+    --bg:#0b1220;
+    --card:#111827;
+    --card2:#1f2937;
+    --accent:#3b82f6;
+    --accent-hover:#2563eb;
+    --text:#f8fafc;
+    --muted:#94a3b8;
+    --border:#334155;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,Segoe UI,sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+}
+
+.container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+header{
+    padding:80px 0;
+    text-align:center;
+    background:
+        radial-gradient(circle at top, rgba(59,130,246,.25), transparent 50%);
+}
+
+.logo{
+    font-size:3rem;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.beta{
+    color:var(--accent);
+}
+
+.subtitle{
+    color:var(--muted);
+    max-width:700px;
+    margin:0 auto 30px;
+    font-size:1.1rem;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--accent);
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:var(--accent-hover);
+}
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.section-desc{
+    text-align:center;
+    color:var(--muted);
+    margin-bottom:50px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:30px;
+}
+
+.overview{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.overview img{
+    width:100%;
+    border-radius:12px;
+    border:1px solid var(--border);
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:var(--card);
+    padding:25px;
+    border-radius:16px;
+    border:1px solid var(--border);
+}
+
+.feature h3{
+    margin-bottom:10px;
+}
+
+.feature p{
+    color:var(--muted);
+}
+
+.video-wrapper{
+    position:relative;
+    padding-bottom:56.25%;
+    height:0;
+    overflow:hidden;
+    border-radius:16px;
+    border:1px solid var(--border);
+}
+
+.video-wrapper iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.tech-stack{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.tech{
+    background:var(--card);
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid var(--border);
+}
+
+footer{
+    border-top:1px solid var(--border);
+    padding:40px 0;
+    text-align:center;
+    color:var(--muted);
+}
+
+.highlight{
+    color:var(--accent);
+    font-weight:600;
+}
+
+@media(max-width:900px){
+    .overview{
+        grid-template-columns:1fr;
+    }
+
+    .logo{
+        font-size:2.3rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="logo">Beta <span class="beta">Terminal</span></h1>
+
+        <p class="subtitle">
+            A finance terminal built from scratch, combining my passion
+            for finance and programming. Designed to analyze companies,
+            retrieve market information, and provide AI-powered insights.
+        </p>
+
+        <a href="#demo" class="btn">Watch Demo</a>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Project Overview</h2>
+
+        <div class="overview">
+            <div class="card">
+                <p>
+                    <strong>Beta Terminal</strong> is a self-hosted finance platform
+                    that gathers company information, market data, news,
+                    and financial metrics into a terminal-style interface.
+                </p>
+
+                <br>
+
+                <p>
+                    The application uses AI to analyze retrieved data and
+                    provide insights directly within the terminal.
+                    News can also be browsed from sources such as
+                    Yahoo Finance and France 24.
+                </p>
+
+                <br>
+
+                <p>
+                    The name <span class="highlight">Beta</span> comes from both
+                    finance (beta risk measurement) and my interest in
+                    Betta fish.
+                </p>
+            </div>
+
+            <img src="pic.png" alt="Beta Terminal Screenshot">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Features</h2>
+        <p class="section-desc">
+            Core functionality currently available in the beta version.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>📈 Company Analysis</h3>
+                <p>
+                    Retrieve financial data and company information
+                    instantly.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🤖 AI Insights</h3>
+                <p>
+                    Local AI model analyzes retrieved information
+                    and generates summaries.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>📰 News Aggregation</h3>
+                <p>
+                    Browse financial news from multiple sources
+                    within the terminal.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🔒 Self Hosted</h3>
+                <p>
+                    Runs entirely on personal infrastructure
+                    and local AI models.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="demo">
+    <div class="container">
+        <h2 class="section-title">Demo Video</h2>
+        <p class="section-desc">
+            See Beta Terminal in action.
+        </p>
+        <div class="video-wrapper">
+            <iframe
+                src="video.mp4"
+                title="Beta Terminal Demo"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Technology Stack</h2>
+        <p class="section-desc">
+            Technologies powering the project.
+        </p>
+
+        <div class="tech-stack">
+
+            <div class="tech">
+                <h3>Python</h3>
+                <p>Backend Logic</p>
+            </div>
+
+            <div class="tech">
+                <h3>Flask</h3>
+                <p>Web Framework</p>
+            </div>
+
+            <div class="tech">
+                <h3>yfinance</h3>
+                <p>Market Data</p>
+            </div>
+
+            <div class="tech">
+                <h3>DuckDuckGo</h3>
+                <p>Search Engine</p>
+            </div>
+
+            <div class="tech">
+                <h3>Cloudflare Tunnel</h3>
+                <p>Public Access</p>
+            </div>
+
+            <div class="tech">
+                <h3>LM Studio</h3>
+                <p>Local AI Hosting</p>
+            </div>
+
+            <div class="tech">
+                <h3>Qwen 3.5 4B</h3>
+                <p>AI Model</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>
+            Beta Terminal • Built by Dakshveer.K.Torul • Work in Progress
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
