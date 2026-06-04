@@ -1,4 +1,7 @@
 # terminal
+
+Webiste for the project: [website](https://betaterminal.torul.org) 
+
 This is a finance terminal made by me :) ... combines my passion of Finance and programming.
 beta because i like beta fish.
 
