@@ -1,5 +1,7 @@
 # terminal
 This is a finance terminal made by me :) ... combines my passion of Finance and programming.
+beta because i like beta fish.
+
 NOTE: STILL WORKING ON IT...
 
 this is an overview. The terminal is use to find data on companies and information and uses ai to analyse the data received. Also can browse some news from yahoo finance and france 24.
