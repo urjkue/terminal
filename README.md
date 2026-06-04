@@ -13,8 +13,8 @@ this is an overview. The terminal is use to find data on companies and informati
 )](https://youtu.be/oV65NZ7JC1E)
 
 Details:
-Coded in python as back end.
-Used Falsk , Hosted on my laptop and tunneld through cloudflare to https://dakshproject.torul.org/. (ps: will only work if i host it on my laptop)
+Coded in python as back end,
+uses Falsk. yfinacne as duckduckgo as search engine. Hosted on my laptop and tunneld through cloudflare to https://dakshproject.torul.org/. (ps: will only work if i host it on my laptop)
 the ai in the app is hosted on my laptop too :
   using lm studio --> qwen3.5-4b-uncensored-hauhaucs-aggressive.
 
